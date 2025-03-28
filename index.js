@@ -17,6 +17,9 @@ const corsOptions = {
   origin: true,
   credentials: true
 }
+app.get("/",(req,res)=>{
+  res.send("Hello This is My backend")
+})
 
 //database connection
 mongoose.set("strictQuery", false);
